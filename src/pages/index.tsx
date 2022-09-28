@@ -1,9 +1,10 @@
-import styles from './index.less';
+import './index.less';
 
+import TreeDemo from './TreeDemo';
 export default function IndexPage() {
   return (
     <div>
-      <h1 className={styles.title}>Page index</h1>
+      <TreeDemo />
     </div>
   );
 }
