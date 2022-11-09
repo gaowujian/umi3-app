@@ -21,8 +21,12 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "@remirror/core": "^2.0.7",
+    "@remirror/pm": "^2.0.1",
+    "@remirror/react": "^2.0.16",
     "react": "17.x",
     "react-dom": "17.x",
+    "remirror": "^2.0.15",
     "umi": "^3.5.34"
   },
   "devDependencies": {

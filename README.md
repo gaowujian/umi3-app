@@ -1,15 +1,18 @@
-# umi project
+# extension的作用，插件的作用
 
-## Getting Started
+## 可以把所有的元素分组
+1. 影响editor如何去渲染这些元素
+2. 可以使特定的command指令暴露
+3. 可以查看指令是否适用于当前的选中
+4. 查看一个标签mark，是否在当前选中的情况下命中。
+5. 可以用来去注册一些prosemirror的东西
 
-Install dependencies,
-
-```bash
-$ yarn
-```
-
-Start the dev server,
-
-```bash
-$ yarn start
-```
+## 主要有三类拓展
+1. 用于创建节点的插件
+   1. node是用来组成prosemirror 文档树的节点
+   2. 例如插入一个新标签<br>的 hardbreak插件
+2. 用于创建mark的插件
+   1. mark的话指的是可以被附着在一些节点上的信息，例如正在被高亮，处于code的字体样式，或者链接。 
+   2. 他会有一个type类型，和一系列的属性用来提供更多的信息。
+   3. 例如修改文本的 strike插件
+3. 用于一些不需要dom的行为插件，例如解析拷贝内容
