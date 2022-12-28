@@ -1,9 +1,7 @@
-import { Select } from 'antd';
-import React from 'react';
-import Counter from './counter';
-
+import EditableTree from '@/components/EditableTree';
+import '@arco-design/web-react/dist/css/arco.css';
 function index() {
-  return <Counter />;
+  return <EditableTree />;
 }
 
 export default index;
